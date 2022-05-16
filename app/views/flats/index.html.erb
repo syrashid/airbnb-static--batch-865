@@ -1,0 +1,12 @@
+<h1>Airbnb Flats</h1>
+<p>These are the flats below:</p>
+
+<ol>
+  <% @flats.each do |flat| %>
+    <li>
+      <h6><%= flat["name"] %> - <%= flat["price"] %> <%= flat["priceCurrency"] %></h6>
+    </li>
+  <% end %>
+</ol>
+
+

@@ -1,0 +1,6 @@
+<---
+I included an image_tag below, similar to link_to this is another useful helper given to us by Rails to generate image tags quickly
+--->
+<h1><%= @flat['name'] %></h1>
+<h2>Price: <%= @flat['price'] %> <%= @flat['priceCurrency'] %></h2>
+<%= image_tag @flat['imageUrl'], alt: @flat['name'] %>
