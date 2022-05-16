@@ -18,7 +18,7 @@ class FlatsController < ApplicationController
   private
 
   def set_flats
-    @flats = JSON.parse(open(FLATS_URL).read)
+    @flats = JSON.parse(URI.open(FLATS_URL).read)
   end
 end
 
